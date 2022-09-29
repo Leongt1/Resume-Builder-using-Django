@@ -16,7 +16,7 @@
         <p>Start Creating your resume here</p>
     </header>
     
-    <form action="" method="POST">
+    <form action="{{profile.id}}" method="POST">
         {% csrf_token %}
         <!-- inputs for the resume -->
         <div class="container" id="resume-form">
@@ -128,13 +128,11 @@
 
                 </div>
 
-                
             </div>
             
         </div>
 
         <div class="gen-resume gen-btn btn">
-            {% comment %} <a href="template/{{user_profile1.id}}/">Generate template</a> {% endcomment %}
             <input type="submit" value="Generate Resume">
         </div>
 
