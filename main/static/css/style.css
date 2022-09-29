@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body {
-    background-color: rgb(220, 223, 244);
+    background-color: rgb(191, 195, 216);
 }
 header {
     text-align: center;
@@ -16,7 +16,7 @@ header {
     flex-wrap: wrap;
 }
 .container .col {
-    border: 2px solid rgb(77, 45, 45);
+    border: 2px solid rgb(231, 211, 211);
     display: flex;
     flex-direction: column;
     flex: 1rem;
@@ -43,6 +43,7 @@ header {
     margin: .2rem;
     padding: .2rem .5rem;
     border-radius: 20px;
+    background-color: transparent;
 }
 
 .gen-btn, .res-btn {
@@ -51,5 +52,5 @@ header {
 }
 .gen-resume input, .res-btn input{
     font-size: 1rem;
-    padding: .2rem;
+    padding: .5rem;
 }
