@@ -16,7 +16,7 @@ header {
     flex-wrap: wrap;
 }
 .container .col {
-    border: 2px solid rgb(231, 211, 211);
+    border: 2px solid rgb(175, 140, 140);
     display: flex;
     flex-direction: column;
     flex: 1rem;
@@ -26,7 +26,6 @@ header {
     align-items: center;
 }
 .container .col h2 {
-    
     margin-bottom: 1rem;
 }
 .container .col .item {
@@ -43,7 +42,8 @@ header {
     margin: .2rem;
     padding: .2rem .5rem;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: rgb(230, 230, 241);
+    cursor: pointer;
 }
 
 .gen-btn, .res-btn {

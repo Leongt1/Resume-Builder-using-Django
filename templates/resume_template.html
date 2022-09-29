@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Generator</title>
-    <link rel="stylesheet" href="static\css\style.css">
+    {% comment %} <link rel="stylesheet" href="static\css\style.css"> {% endcomment %}
+    <link rel="stylesheet" href="/static/css/style.css?{% now "U" %}"/>
     <style>
         
     </style>
@@ -16,7 +17,7 @@
         <p>Start Creating your resume here :)</p>
     </header>
     
-    <form action="" method="POST">
+    <form action=" " method="POST">
         {% csrf_token %}
         <!-- inputs for the resume -->
         <div class="container" id="resume-form">
@@ -133,12 +134,14 @@
             
         </div>
 
-        <div class="gen-resume gen-btn btn">
-            <input  type="submit" value="Generate Template">
+        <div class="gen-resume gen-btn ">
+            {% comment %} <a href="/1">     {% endcomment %}
+                <input class="btn" type="submit" value="Generate Template">
+            {% comment %} </a> {% endcomment %}
         </div>
 
-        <div class="reset res-btn btn">
-            <input type="reset" value="Reset">
+        <div class="reset res-btn">
+            <input class="btn" type="reset" value="Reset">
         </div>
         
     </form>

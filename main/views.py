@@ -8,6 +8,7 @@ import io
 # Create your views here.
 def mainpg(request):
     if request.method=='POST':
+        id = request.POST.get("id")
         name = request.POST.get("name")
         phone = request.POST.get("name")
         email = request.POST.get("email")
@@ -23,6 +24,7 @@ def mainpg(request):
 
         profile = Profile(
         # user = User.objects.create_user(
+            id=id,
             name = name,
             phone = phone,
             email = email,
