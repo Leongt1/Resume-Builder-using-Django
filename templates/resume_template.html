@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="static\css\style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+        <p>Start Creating your resume here</p>
+    </header>
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+        <!-- inputs for the resume -->
+        <div class="container" id="resume-form">
+            <!-- first column -->
+            
+            <div class="col" id="col-1">
+
+                <h2>Personal Information</h2>
+
+                <div class="item name">
+                    <label for="">Your Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name here...">
+                </div>
+
+                <div class="item phone">
+                    <label for="">Your Phone number: </label>
+                    <input type="text" name="phone" id="name" placeholder="Enter your Phone number here...">
+                </div>
+
+                <div class="item email">
+                    <label for="">Your Email: </label>
+                    <input type="email" name="email"  id="email" placeholder="Enter your Email here...">
+                </div>
+
+                <div class="item address">
+                    <label for="">Your Address: </label>
+                    <textarea type="text" name="address"  id="address" placeholder="Enter your Address here..." rows="" cols="30"></textarea>
+                </div>
+
+                <div class="item insta">
+                    <label for="">Your Instagram: </label>
+                    <input type="url" name="insta" id="insta" placeholder="Enter your URL here...">
+                </div>
+
+                <div class="item github">
+                    <label for="">Your GitHub: </label>
+                    <input type="url" name="github"  id="github" placeholder="Enter your URL here...">
+                </div>
+
+                <div class="item linkedin">
+                    <label for="">Your Linkedin: </label>
+                    <input type="url" name="linkedin"  id="linkedin" placeholder="Enter your URL here...">
+                </div>
+
+                {% comment %} </form> {% endcomment %}
+            </div>
+
+            <!-- second column -->
+            <div class="col" id="col-2">
+
+                <h2>Professional Information</h2>
+
+                <div class="item name">
+
+                    <label for="">Career Objective: </label>
+                    <input type="text"  name="co" id="co" placeholder="Enter your objective here...">
+
+                </div>
+
+                <div class="item" id="we">
+
+                    <label for="">Work Experience: </label>
+                    <textarea name="workexp" class="workexp" placeholder="Enter your work experience here..." rows="3" cols="30"></textarea>
+
+                    <div id="weAddBtn">
+                        <button  type="button"  onclick="addNewWField()" class="btn">
+                            Add
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="item" id="projects">
+
+                    <label for="">Projects: </label>
+                    <textarea name="project" class="address" placeholder="Write about your Project and Project Description..." rows="3" cols="30"></textarea>
+                    
+                    <div id="pAddBtn">
+                        <button  type="button"  onclick="addNewPField()" class="btn">
+                            Add
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div class="item" id="skills">
+
+                    <label for="">Your Skills: </label>
+                    <input type="text" name="skill" class="skill" placeholder="Skill...">
+
+                    <div id="skillsAddBtn">
+                        <button type="button"  onclick="addNewSField()" class="btn">
+                            Add
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="item" id="aq">
+
+                    <label for="">Academic Qualifications: </label>
+                    <textarea name="aq" class="workexp" placeholder="Enter your Academic Qualifications..." rows="3" cols="30"></textarea>
+
+                    <div id="aqAddBtn">
+                        <button type="button" onclick="addNewAField()" class="btn">
+                            Add
+                        </button>
+                    </div>
+
+                </div>
+
+                
+            </div>
+            
+        </div>
+
+        <div class="gen-resume gen-btn btn">
+            {% comment %} <a href="template/{{user_profile1.id}}/">Generate template</a> {% endcomment %}
+            <input type="submit" value="Generate Resume">
+        </div>
+
+        <div class="reset res-btn btn">
+            <input type="reset" value="Reset">
+        </div>
+        
+    </form>
+        
+    </div>
+
+    <!-- template for the resume -->
+    <div class="container" id="resume-template">
+
+    </div>
+
+    <script src="static\js\script.js"></script>
+</body>
+</html>
