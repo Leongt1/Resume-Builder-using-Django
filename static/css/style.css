@@ -3,7 +3,11 @@
     padding: 0px;
 }
 body {
+<<<<<<< HEAD
     background-color: rgb(30, 59, 246);
+=======
+    background-color: rgb(191, 195, 216);
+>>>>>>> development
 }
 header {
     text-align: center;
@@ -16,7 +20,11 @@ header {
     flex-wrap: wrap;
 }
 .container .col {
+<<<<<<< HEAD
     border: 2px solid rgb(242, 174, 174);
+=======
+    border: 2px solid rgb(175, 140, 140);
+>>>>>>> development
     display: flex;
     flex-direction: column;
     flex: 1rem;
@@ -26,7 +34,6 @@ header {
     align-items: center;
 }
 .container .col h2 {
-    
     margin-bottom: 1rem;
 }
 .container .col .item {
@@ -43,6 +50,8 @@ header {
     margin: .2rem;
     padding: .2rem .5rem;
     border-radius: 20px;
+    background-color: rgb(230, 230, 241);
+    cursor: pointer;
 }
 
 .gen-btn, .res-btn {
@@ -51,5 +60,5 @@ header {
 }
 .gen-resume input, .res-btn input{
     font-size: 1rem;
-    padding: .2rem;
+    padding: .5rem;
 }
