@@ -3,11 +3,7 @@
     padding: 0px;
 }
 body {
-<<<<<<< HEAD
-    background-color: rgb(30, 59, 246);
-=======
-    background-color: rgb(191, 195, 216);
->>>>>>> development
+    background-color: rgb(225, 229, 255);
 }
 header {
     text-align: center;
@@ -20,11 +16,7 @@ header {
     flex-wrap: wrap;
 }
 .container .col {
-<<<<<<< HEAD
-    border: 2px solid rgb(242, 174, 174);
-=======
     border: 2px solid rgb(175, 140, 140);
->>>>>>> development
     display: flex;
     flex-direction: column;
     flex: 1rem;
